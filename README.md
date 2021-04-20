@@ -8,5 +8,7 @@ Download AMSI_Bypass.zip or build project and run following command in powershel
 [System.Reflection.Assembly]::LoadFile("full_path_to_dll")
 [Bypass]::amsi()
 ```
+```
 [Bypass] - Class
 amsi() - Method in Bypass class
+```
